@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/Abdssamie",
-  linkedin: "https://www.linkedin.com/in/abdessamie-elmoubarki-321b03338/",
+  linkedin: "https://www.linkedin.com/in/abdessamaie-el-moubarki-406296310/",
   gmail: "abdessamie.elmoubarki0@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/abdssamie.elmobarki.7",
@@ -49,114 +49,56 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle:
-    "CHEMICAL ENGINEERING STUDENT APPLYING AI & SOFTWARE DEVELOPMENT TO INDUSTRIAL CHALLENGES",
+  subTitle: "CHEMICAL ENGINEERING STUDENT LEVERAGING AI & AUTOMATION TO SOLVE INDUSTRIAL CHALLENGES",
   skills: [
     emoji(
-      "⚡ Strong knowledge in chemistry, electrochemistry, organic chemistry, and fundamental chemical engineering concepts"
+      "⚡ Expertise in chemistry, electrochemistry, and chemical engineering concepts with a focus on industrial applications"
     ),
     emoji(
-      "⚡ Specializing in water and energy technologies, focusing on sustainable and AI-driven solutions"
+      "⚡ Specializing in water and energy technologies, emphasizing sustainable and AI-driven solutions"
     ),
     emoji(
-      "⚡ Process modeling and simulation using Aspen Plus, MATLAB, and Python-based tools"
+      "⚡ Process modeling and simulation using tools like Aspen Plus, MATLAB, and Python"
     ),
     emoji(
-      "⚡ Developing AI/ML models for industrial applications, data analysis, and process optimization"
+      "⚡ Proficient in automation and applying AI to optimize industrial processes"
     ),
-    emoji(
-      "⚡ Designing and optimizing water treatment and energy management systems"
-    ),
-    emoji(
-      "⚡ Developing full-stack applications with Python, Flask/Django, and Flutter for web and mobile"
-    ),
-    emoji(
-      "⚡ Working with cloud services such as Firebase, Google Cloud, and Docker for scalable applications"
-    )
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     // Chemical Engineering Skills
     {
       skillName: "Aspen Plus",
-      fontAwesomeClassname: "fas fa-industry"
+      fontAwesomeClassname: "fas fa-industry",
     },
     {
       skillName: "Process Simulation",
-      fontAwesomeClassname: "fas fa-cogs"
+      fontAwesomeClassname: "fas fa-cogs",
     },
-    {
-      skillName: "Electrochemistry",
-      fontAwesomeClassname: "fas fa-bolt"
-    },
-    {
-      skillName: "Organic Chemistry",
-      fontAwesomeClassname: "fas fa-flask"
-    },
-
     {
       skillName: "Water Treatment",
-      fontAwesomeClassname: "fas fa-water"
+      fontAwesomeClassname: "fas fa-water",
     },
     {
       skillName: "Energy Systems",
-      fontAwesomeClassname: "fas fa-solar-panel"
+      fontAwesomeClassname: "fas fa-solar-panel",
     },
 
-    // AI & Data Science
+    // General Programming & AI
     {
       skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fab fa-python",
     },
     {
-      skillName: "PyTorch",
-      fontAwesomeClassname: "fas fa-robot"
+      skillName: "AI & Automation",
+      fontAwesomeClassname: "fas fa-robot",
     },
     {
-      skillName: "Flask",
-      fontAwesomeClassname: "fas fa-pepper-hot"
+      skillName: "Software Development",
+      fontAwesomeClassname: "fas fa-code",
     },
-    {
-      skillName: "Django",
-      fontAwesomeClassname: "fas fa-leaf"
-    },
-    {
-      skillName: "SQL Databases",
-      fontAwesomeClassname: "fas fa-database"
-    },
-
-    // Web & Mobile Development
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "Flutter",
-      fontAwesomeClassname: "fas fa-mobile-alt"
-    },
-    {
-      skillName: "Node.js",
-      fontAwesomeClassname: "fab fa-node"
-    },
-
-    // DevOps & Cloud
-    {
-      skillName: "Google Cloud",
-      fontAwesomeClassname: "fab fa-google"
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git-alt"
-    }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -169,7 +111,7 @@ const educationInfo = {
       logo: require("./assets/images/high_school.png"),
       subHeader: "Sciences expérimentales - Sciences physiques",
       duration: "September 2019 - Juin 2022",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ..."
+      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ..."
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
@@ -193,26 +135,21 @@ const techStack = {
   experience: [
     {
       Stack: "Chemical Engineering & Process Modeling",
-      progressPercentage: "80%" // Applying knowledge to real-world problems
+      progressPercentage: "65%",
     },
     {
-      Stack: "Backend Development",
-      progressPercentage: "65%" // Solid experience with APIs and databases
+      Stack: "Water Treatment & Energy Systems",
+      progressPercentage: "43%",
     },
     {
-      Stack: "AI & Machine Learning",
-      progressPercentage: "60%" // Growing expertise in ML/DL
+      Stack: "AI & Machine Learning for Industrial Optimization",
+      progressPercentage: "40%",
     },
     {
-      Stack: "Programming & Software Development",
-      progressPercentage: "70%" // Strong coding foundation across multiple projects
+      Stack: "Automation & Programming",
+      progressPercentage: "90%",
     },
-    {
-      Stack: "Cloud & DevOps",
-      progressPercentage: "35%" // Learning and applying cloud services and deployment
-    }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section
 };
 
 // Work experience section
@@ -252,41 +189,42 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "REAL-WORLD PROJECTS THAT DEMONSTRATE MY EXPERTISE IN ENGINEERING AND AUTOMATION",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/aqua_plus_plus.png"), // Use a placeholder for the image
+      projectName: "Water Treatment and Operations Software",
+      projectDesc:
+        "Developing a software solution for designing and managing water treatment processes. The tool leverages AI and automation to optimize operational efficiency and resource utilization.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Learn More",
+          url: "https://aqua-plus-plus.tiiny.site" // Replace with an actual link when available
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Tripixir_logo.png"), // Replace with an appropriate image
+      projectName: "Tripixir Automation Services",
+      projectDesc:
+        "Founded an agency offering advanced automation solutions for travel agents. These automations streamline workflows, optimize customer management, and are adaptable for use across various business types, including logistics, retail, and professional services.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit Tripixir",
+          url: "https://tripixir.com/"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -338,7 +276,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
@@ -401,7 +339,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+212-708231191",
+  number: "+212-633810593",
   email_address: "abdessamie.elmoubarki@gmail.com"
 };
 

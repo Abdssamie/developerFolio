@@ -1,36 +1,38 @@
-/* Change this file to get your personal Portfolio */
+/* Modifiez ce fichier pour créer votre portfolio personnel */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
+// Pour modifier les couleurs globales du portfolio, allez dans le fichier _globalColor.scss
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation"; // Renommez avec le nom de votre fichier pour une animation personnalisée
 
-// Splash Screen
+// Écran de démarrage
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true, // Mettez false pour désactiver l'écran de démarrage
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000 // Définissez la durée de l'animation selon votre animation
 };
 
-// Summary And Greeting Section
+// Section Résumé et Salutations
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true // Mettez false pour utiliser un SVG statique
 };
 
 const greeting = {
   username: "Abdessamie Elmoubarki",
-  title: "Hi all, I'm Abdessamie",
+  title: "Bonjour à tous, je suis Abdessamie",
   subTitle: emoji(
-    "A dedicated Chemical Engineering student specializing in Water and Energy Technologies ⚡, with knowledge in chemistry, electrochemistry, organic chemistry, and the fundamentals of chemical engineering. Passionate about leveraging AI and software development to solve environmental and industrial challenges. Experienced in Python, AI/ML, and full-stack development. Currently seeking a summer internship in the field of water and energy technologies."
+    "Étudiant en génie chimique, spécialisé dans les technologies de l'eau et de l'énergie ⚡, avec des compétences en traitement des eaux, thermodynamique et automatisation. Passionné par l’utilisation de l’IA et du développement logiciel pour résoudre les défis environnementaux et industriels.\n" +
+    "\n" +
+    "Actuellement à la recherche d’un stage en juillet dans le domaine des technologies de l’eau et de l’énergie pour appliquer mes compétences et contribuer à des projets innovants."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Replace with an updated resume if needed
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Remplacez par un CV mis à jour si nécessaire
+  displayGreeting: true // Mettez false pour masquer cette section, par défaut true
 };
 
-// Social Media Links
+// Liens des réseaux sociaux
 
 const socialMediaLinks = {
   github: "https://github.com/Abdssamie",
@@ -40,85 +42,85 @@ const socialMediaLinks = {
   facebook: "https://www.facebook.com/abdssamie.elmobarki.7",
   medium: "https://medium.com/@abdssamie126",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  // Instagram, Twitter et Kaggle sont également pris en charge dans les liens !
+  // Pour personnaliser les icônes et les liens sociaux, modifiez src/components/SocialMedia
+  display: true // Mettez true pour afficher cette section, par défaut true
 };
 
-// Skills Section
+// Section Compétences
 
 const skillsSection = {
-  title: "What I Do",
-  subTitle: "CHEMICAL ENGINEERING STUDENT LEVERAGING AI & AUTOMATION TO SOLVE INDUSTRIAL CHALLENGES",
+  title: "Ce que je fais",
+  subTitle: "ÉTUDIANT EN GÉNIE CHIMIQUE TIRANT PARTI DE L'IA ET DE L'AUTOMATISATION POUR RÉSOUDRE LES DÉFIS INDUSTRIELS",
   skills: [
     emoji(
-      "⚡ Expertise in chemistry, electrochemistry, and chemical engineering concepts with a focus on industrial applications"
+      "⚡ Expertise en chimie, électrochimie et concepts de génie chimique avec un accent sur les applications industrielles"
     ),
     emoji(
-      "⚡ Specializing in water and energy technologies, emphasizing sustainable and AI-driven solutions"
+      "⚡ Spécialisation dans les technologies de l'eau et de l'énergie, en mettant l'accent sur les solutions durables et basées sur l'IA"
     ),
     emoji(
-      "⚡ Process modeling and simulation using tools like Aspen Plus, MATLAB, and Python"
+      "⚡ Modélisation et simulation de processus à l'aide d'outils comme Aspen Plus, MATLAB et Python"
     ),
     emoji(
-      "⚡ Proficient in automation and applying AI to optimize industrial processes"
+      "⚡ Maîtrise de l'automatisation et application de l'IA pour optimiser les processus industriels"
     ),
   ],
 
   softwareSkills: [
-    // Chemical Engineering Skills
+    // Compétences en génie chimique
     {
       skillName: "Aspen Plus",
       fontAwesomeClassname: "fas fa-industry",
     },
     {
-      skillName: "Process Simulation",
+      skillName: "Simulation de processus",
       fontAwesomeClassname: "fas fa-cogs",
     },
     {
-      skillName: "Water Treatment",
+      skillName: "Traitement de l'eau",
       fontAwesomeClassname: "fas fa-water",
     },
     {
-      skillName: "Energy Systems",
+      skillName: "Systèmes énergétiques",
       fontAwesomeClassname: "fas fa-solar-panel",
     },
 
-    // General Programming & AI
+    // Programmation générale et IA
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python",
     },
     {
-      skillName: "AI & Automation",
+      skillName: "IA et automatisation",
       fontAwesomeClassname: "fas fa-robot",
     },
     {
-      skillName: "Software Development",
+      skillName: "Développement logiciel",
       fontAwesomeClassname: "fas fa-code",
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: true, // Mettez false pour masquer cette section, par défaut true
 };
 
-// Education Section
+// Section Éducation
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true, // Mettez false pour masquer cette section, par défaut true
   schools: [
     {
       schoolName: "Lycée Moussa Ibn Noussair",
       logo: require("./assets/images/high_school.png"),
       subHeader: "Sciences expérimentales - Sciences physiques",
-      duration: "September 2019 - Juin 2022",
-      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ..."
+      duration: "Septembre 2019 - Juin 2022",
+      // desc: "Classé dans les 10% supérieurs du programme. A suivi des cours sur l'ingénierie logicielle, la sécurité Web, les systèmes d'exploitation, ..."
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
       schoolName: "Ecole nationale supérieure de chimie",
       logo: require("./assets/images/ensck.png"),
-      subHeader: "Diplome d'ingénieur en génie chimique",
-      duration: "September 2022 - July 2027",
+      subHeader: "Diplôme d'ingénieur en génie chimique",
+      duration: "Septembre 2022 - Juillet 2027",
       desc: "Filière de technologies de l'eau et l'énergie"
       /*descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -128,40 +130,40 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Vos 3 principales expériences/technologies maîtrisées
 
 const techStack = {
-  viewSkillBars: true, // Set it to true to show Proficiency Section
+  viewSkillBars: true, // Mettez true pour afficher la section Compétence
   experience: [
     {
-      Stack: "Chemical Engineering & Process Modeling",
+      Stack: "Génie chimique et modélisation de processus",
       progressPercentage: "65%",
     },
     {
-      Stack: "Water Treatment & Energy Systems",
+      Stack: "Traitement de l'eau et systèmes énergétiques",
       progressPercentage: "43%",
     },
     {
-      Stack: "AI & Machine Learning for Industrial Optimization",
+      Stack: "IA et apprentissage automatique pour l'optimisation industrielle",
       progressPercentage: "40%",
     },
     {
-      Stack: "Automation & Programming",
-      progressPercentage: "90%",
+      Stack: "Automatisation et programmation",
+      progressPercentage: "60%",
     },
   ],
 };
 
-// Work experience section
+// Section Expérience professionnelle
 
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: false, // Mettez true pour afficher la section workExperiences
   experience: [
     {
-      role: "Software Engineer",
+      role: "Ingénieur logiciel",
       company: "Facebook",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      date: "Juin 2018 – Aujourd'hui",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -169,188 +171,188 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
+      role: "Développeur Front-End",
       company: "Quora",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      date: "Mai 2017 – Mai 2018",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Software Engineer Intern",
+      role: "Stagiaire Ingénieur logiciel",
       company: "Airbnb",
       companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      date: "Janv 2015 – Sep 2015",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+/* Votre section Open Source pour afficher vos projets Github épinglés
+Pour savoir comment obtenir la clé github, consultez readme.md */
 
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Mettez true ou false pour afficher le profil de contact via Github, par défaut true
+  display: false // Mettez false pour masquer cette section, par défaut true
 };
 
-// Some big projects you have worked on
+// Quelques grands projets sur lesquels vous avez travaillé
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "REAL-WORLD PROJECTS THAT DEMONSTRATE MY EXPERTISE IN ENGINEERING AND AUTOMATION",
+  title: "Grands Projets",
+  subtitle: "PROJETS CONCRETS QUI DÉMONTRENT MON EXPERTISE EN INGÉNIERIE ET EN AUTOMATISATION",
   projects: [
     {
-      image: require("./assets/images/aqua_plus_plus.png"), // Use a placeholder for the image
-      projectName: "Water Treatment and Operations Software",
+      image: require("./assets/images/aqua_plus_plus.png"), // Utilisez un espace réservé pour l'image
+      projectName: "Logiciel de traitement de l'eau et d'opérations",
       projectDesc:
-        "Developing a software solution for designing and managing water treatment processes. The tool leverages AI and automation to optimize operational efficiency and resource utilization.",
+        "Développement d'une solution logicielle pour la conception et la gestion des processus de traitement de l'eau. L'outil utilise l'IA et l'automatisation pour optimiser l'efficacité opérationnelle et l'utilisation des ressources.",
       footerLink: [
         {
-          name: "Learn More",
-          url: "https://aqua-plus-plus.tiiny.site" // Replace with an actual link when available
+          name: "En savoir plus",
+          url: "https://aqua-plus-plus.tiiny.site" // Remplacez par un lien réel si disponible
         }
       ]
     },
     {
-      image: require("./assets/images/Tripixir_logo.png"), // Replace with an appropriate image
-      projectName: "Tripixir Automation Services",
+      image: require("./assets/images/Tripixir_logo.png"), // Remplacez par une image appropriée
+      projectName: "Services d'automatisation Tripixir",
       projectDesc:
-        "Founded an agency offering advanced automation solutions for travel agents. These automations streamline workflows, optimize customer management, and are adaptable for use across various business types, including logistics, retail, and professional services.",
+        "Fondation d'une agence offrant des solutions d'automatisation avancées pour les agents de voyage. Ces automatisations rationalisent les flux de travail, optimisent la gestion des clients et sont adaptables à divers types d'entreprises, y compris la logistique, la vente au détail et les services professionnels.",
       footerLink: [
         {
-          name: "Visit Tripixir",
+          name: "Visiter Tripixir",
           url: "https://tripixir.com/"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Mettez false pour masquer cette section, par défaut true
 };
 
-// Achievement Section
-// Include certificates, talks etc
+// Section Réalisations
+// Inclure les certificats, les conférences, etc.
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Réalisations et Certifications 🏆 "),
   subtitle:
-    "Certifications, Courses, and Recognitions that highlight my expertise in chemical engineering and AI/ML.",
+    "Certifications, cours et reconnaissances qui mettent en évidence mon expertise en génie chimique et en IA/ML.",
 
   achievementsCards: [
     {
-      title: "AIChE Process Safety Certifications",
+      title: "Certifications AIChE en sécurité des processus",
       subtitle:
-        "Earned multiple credentials from the American Institute of Chemical Engineers (AIChE) in process safety, covering risk assessment, hazard analysis, and safety best practices.",
+        "Obtention de plusieurs titres de compétences de l'American Institute of Chemical Engineers (AIChE) en sécurité des processus, couvrant l'évaluation des risques, l'analyse des dangers et les meilleures pratiques de sécurité.",
       image: require("./assets/images/aiche_logo.png"),
-      imageAlt: "AIChE Logo",
+      imageAlt: "Logo AIChE",
       footerLink: [
         {
-          name: "View Certifications",
-          url: "https://drive.google.com/drive/folders/1koaTrAcpL3ivznPT5PoYdY_BMT4ero4L?usp=sharing" // Add the actual link if available
+          name: "Voir les certifications",
+          url: "https://drive.google.com/drive/folders/1koaTrAcpL3ivznPT5PoYdY_BMT4ero4L?usp=sharing" // Ajoutez le lien réel si disponible
         }
       ]
     },
     {
-      title: "Machine Learning Specialization by Andrew Ng",
+      title: "Spécialisation en apprentissage automatique par Andrew Ng",
       subtitle:
-        "Completed the renowned Machine Learning Specialization on Coursera, covering supervised/unsupervised learning, neural networks, and deep learning.",
+        "Achèvement de la célèbre spécialisation en apprentissage automatique sur Coursera, couvrant l'apprentissage supervisé/non supervisé, les réseaux de neurones et l'apprentissage profond.",
       image: require("./assets/images/deep_learning.jpeg"),
-      imageAlt: "Coursera Logo",
+      imageAlt: "Logo Coursera",
       footerLink: [
         {
-          name: "View Supervised Machine Learning Certification",
-          url: "https://coursera.org/share/151414324a3928f66804842b35ac5407" // Add the actual link if available
+          name: "Voir la certification en apprentissage automatique supervisé",
+          url: "https://coursera.org/share/151414324a3928f66804842b35ac5407" // Ajoutez le lien réel si disponible
         },
         {
-          name: "View Advanced Learning algorithms Certification",
-          url: "https://coursera.org/share/1a1f875be393b1bc595c205eaed9991b" // Add the actual link if available
+          name: "Voir la certification en algorithmes d'apprentissage avancés",
+          url: "https://coursera.org/share/1a1f875be393b1bc595c205eaed9991b" // Ajoutez le lien réel si disponible
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Mettez false pour masquer cette section, par défaut true
 };
 
-// Blogs Section
+// Section Blogs
 
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
+    "Avec mon amour pour le développement de choses sympas, j'aime écrire et enseigner aux autres ce que j'ai appris.",
+  displayMediumBlogs: "false", // Mettez true pour afficher les blogs Medium récupérés au lieu des blogs codés en dur
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      title: "Gagnez un t-shirt Google Assistant et 200 $ en crédits Google Cloud",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Voulez-vous gagner 200 $ et un t-shirt Google Assistant en créant une action Google Assistant en moins de 30 min ?"
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      title: "Pourquoi REACT est le meilleur ?",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "React est une bibliothèque JavaScript pour la construction d'interfaces utilisateur. Elle est maintenue par Facebook et une communauté de développeurs et d'entreprises individuels."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false // Mettez false pour masquer cette section, par défaut true
 };
 
-// Talks Sections
+// Sections Conférences
 
 const talkSection = {
-  title: "TALKS",
+  title: "CONFÉRENCES",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "J'ADORE PARTAGER MES CONNAISSANCES LIMITÉES ET OBTENIR UN BADGE DE CONFÉRENCIER 😅"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title: "Construire des actions pour Google Assistant",
+      subtitle: "Codelab au GDG DevFest Karachi 2019",
       slides_url: "https://bit.ly/saadpasta-slides",
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false // Mettez false pour masquer cette section, par défaut true
 };
 
-// Podcast Section
+// Section Podcast
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "J'ADORE PARLER DE MOI ET DE LA TECHNOLOGIE",
 
-  // Please Provide with Your Podcast embeded Link
+  // Veuillez fournir le lien intégré de votre podcast
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false // Mettez false pour masquer cette section, par défaut true
 };
 
-// Resume Section
+// Section CV
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+  title: "CV",
+  subtitle: "N'hésitez pas à télécharger mon CV",
 
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  // Veuillez fournir le lien intégré de votre podcast
+  display: true // Mettez false pour masquer cette section, par défaut true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contactez-moi ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuter d'un projet ou simplement dire bonjour ? Ma boîte de réception est ouverte à tous.",
   number: "+212-633810593",
   email_address: "abdessamie.elmoubarki@gmail.com"
 };
 
-// Twitter Section
+// Section Twitter
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "twitter", // Remplacez "twitter" par votre nom d'utilisateur Twitter sans @
+  display: false // Mettez true pour afficher cette section, par défaut false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Mettez false si vous ne cherchez pas d'emploi. isHireable sera également affiché comme Ouvert aux opportunités : Oui/Non dans le pied de page GitHub
 
 export {
   illustration,

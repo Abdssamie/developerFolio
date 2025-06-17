@@ -15,11 +15,11 @@ export default function Footer() {
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           Theme by{" "}
           <a
-            href="https://github.com/saadpasta/developerFolio"
+            href="https://www.linkedin.com/in/abdessamaie-el-moubarki-406296310/"
             target="_blank"
             rel="noreferrer"
           >
-            developerFolio
+            Abdessamaie El Moubarki
           </a>
         </p>
       </div>

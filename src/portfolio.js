@@ -28,7 +28,7 @@ const greeting = {
     "Actuellement à la recherche d’un stage en juillet dans le domaine des technologies de l’eau et de l’énergie pour appliquer mes compétences et contribuer à des projets innovants."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Remplacez par un CV mis à jour si nécessaire
+    "https://drive.google.com/file/d/1vdo2UcnreDBu3aG-MzFHEC9Pef0JZYTr/view?usp=sharing", // Remplacez par un CV mis à jour si nécessaire
   displayGreeting: true // Mettez false pour masquer cette section, par défaut true
 };
 
@@ -226,7 +226,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Mettez false pour masquer cette section, par défaut true
+  display: false // Mettez false pour masquer cette section, par défaut true
 };
 
 // Section Réalisations
